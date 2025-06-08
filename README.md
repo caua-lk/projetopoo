@@ -67,5 +67,7 @@ blitzstar/
 - Documentação final
 ## 4. Requisitos técnicos
 python==3.13.3 
+
 pygame==2.6.0 
+
 random==3.13.3 
