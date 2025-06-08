@@ -33,3 +33,39 @@ Cada inimigo derrotado representa um pequeno avanço na batalha pela sobrevivên
 - Efeitos sonoros de disparo e impacto.
 - Música de fundo imersiva.
 - *Easter eggs* e bônus ocultos.
+## 2.2 Arquitetura do Código
+```
+blitzstar/
+├── main.py # Ponto de entrada (inicialização do jogo)
+├── game.py # Lógica principal (estado do jogo, loop do jogo)
+├── player.py # Controle da nave do jogador (movimentação, tiros)
+├── aliens.py # Definição dos inimigos e padrões de ataque
+├── projectiles.py # Gerenciamento de tiros e colisões
+├── ui/ # Interface do usuário
+│ ├── render.py # Renderização gráfica (Pygame)
+│ ├── sounds.py # Sistema de áudios
+│ └── hud.py # Exibição de pontuação, vidas e status
+```
+## 3. Etapas de entrega (Cronograma detalhado) 
+
+### Etapa 1: Lógica do jogo ( Semana 1 a 4 ) 
+- Controle da nave (teclado)
+- Alternância de menu inicial e outras telas (pausa/game over/final/rodando)
+- Compreensão de colisões
+- Efeitos sonoros e scores
+### Etapa 2: Criação das artes ( Semana 5 a 8) 
+- Criação de ambiente, telas (pausa/game over/final/rodando)
+- Artes principais (nave, itens, inimigos etc)
+- animação de sprites "segretos"
+### Etapa 3: Protótipo básico ( Semana 9 a 14 ) 
+- Funcionabilidade de layout
+- Estruturação legível
+### Etapa 4: Testes e Entrega Final ( Semana 15 a 18 ) 
+- Testes de usabilidade
+- Correção de erros
+- Implementação de requisitos faltosos
+- Documentação final
+## 4. Requisitos técnicos
+python==3.13.3
+pygame==2.6.0
+random==3.13.3
