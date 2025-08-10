@@ -1,7 +1,7 @@
 # Documentação do Projeto: BlitzStar
 
 ## 1. Visão Geral
-   **Tecnologia Utilizada:** Python + Pygame + Random  
+   **Tecnologia Utilizada:** Python + Pygame + Random + time
    **Inspiração:** Space Invaders  
    **Descrição:** *BlitzStar* é uma reconstrução do clássico *Space Invaders*, utilizando *Pygame* para a implementação gráfica e lógica do jogo e *Random* para a aleatoriedade de elementos como movimentação e spawn de inimigos.  
    **Objetivo:** Criar um modelo funcional semelhante ao jogo inspirado com recursos básicos como pontuação, controle da nave e disparo, visando implementações futuras baseadas nas necessidades de melhoria e expansões.
@@ -26,7 +26,7 @@ Cada inimigo derrotado representa um pequeno avanço na batalha pela sobrevivên
 
 ### Interface gráfica:
 - HUD com pontuação.
-- Tela inicial, tela de pausa e tela de *game over*.
+- Tela inicial, tela de pausa, tela de *game over*, tela de créditos e tela de escolha de nave
 - Botões de comando para disparo e movimentação.
 
 ### Extras:
@@ -36,15 +36,13 @@ Cada inimigo derrotado representa um pequeno avanço na batalha pela sobrevivên
 ## 2.2 Arquitetura do Código
 ```
 blitzstar/
-├── main.py # Ponto de entrada (inicialização do jogo)
-├── game.py # Lógica principal (estado do jogo, loop do jogo)
-├── player.py # Controle da nave do jogador (movimentação, tiros)
-├── aliens.py # Definição dos inimigos e padrões de ataque
-├── projectiles.py # Gerenciamento de tiros e colisões
-├── ui/ # Interface do usuário
-│ ├── render.py # Renderização gráfica (Pygame)
-│ ├── sounds.py # Sistema de áudios
-│ └── hud.py # Exibição de pontuação, vidas e status
+---|Sprites
+---|Config.py
+---|Tela.py
+-------|Telas/
+---|Nave_Atira.py
+------|nave/powerups/Tiro/Alien(Subclasses de Alien)/Maus
+---|jogo.py
 ```
 ## 3. Etapas de entrega (Cronograma detalhado) 
 
