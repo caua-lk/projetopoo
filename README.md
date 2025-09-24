@@ -1,7 +1,7 @@
 # Documentação do Projeto: BlitzStar
 
 ## 1. Visão Geral
-   **Tecnologia Utilizada:** Python + Pygame + Random + time  
+   **Tecnologia Utilizada:** Python + Pygame + Random + time + PySerial
    **Inspiração:** Space Invaders  
    **Descrição:** *BlitzStar* é uma reconstrução do clássico *Space Invaders*, utilizando *Pygame* para a implementação gráfica e lógica do jogo e *Random* para a aleatoriedade de elementos como movimentação e spawn de inimigos.  
    **Objetivo:** Criar um modelo funcional semelhante ao jogo inspirado com recursos básicos como pontuação, controle da nave e disparo, visando implementações futuras baseadas nas necessidades de melhoria e expansões.
@@ -25,12 +25,12 @@ Cada inimigo derrotado representa um pequeno avanço na batalha pela sobrevivên
 - Progressão de dificuldade ao longo do jogo.
 
 ### Interface gráfica:
-- HUD com pontuação.
+- HUD com pontuação e quantidade de vida.
 - Tela inicial, tela de pausa, tela de *game over*, tela de créditos e tela de escolha de nave
 - Botões de comando para disparo e movimentação.
 
 ### Extras:
-- Efeitos sonoros de disparo e impacto.
+- Efeitos sonoros de disparo e de derrota.
 - Música de fundo imersiva.
 - *Easter eggs* e bônus ocultos.
 ## 2.2 Arquitetura do Código
@@ -42,15 +42,18 @@ blitzstar/
 ---------|Explosões
 ---|Sounds/
 ------|Trilhas sonoras e sons
----|config.py
----|const.py
----|Explosion.py
----|Inimigos.py
----|jogo.py
----|nave.py
----|stat_game.py
----|tela.py
----|Tiros.py
+---| Explosion.py
+---| Inimigos.py
+---| Tiros.py
+---| config.py
+---| const.py
+---| entrada.py
+---| jogo.py
+---| nave.py
+---| power.py
+---| stat_game.py
+---| tela.py
+
 ```
 ## 3. Etapas de entrega (Cronograma detalhado) 
 
@@ -79,3 +82,5 @@ pygame==2.6.0
 random==3.13.3 
 
 time==3.13.3   
+
+pyserial==3.5
