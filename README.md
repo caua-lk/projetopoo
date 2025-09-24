@@ -1,7 +1,7 @@
 # Documentação do Projeto: BlitzStar
 
 ## 1. Visão Geral
-   **Tecnologia Utilizada:** Python + Pygame + Random + time + PySerial 
+   **Tecnologia Utilizada:** Python + Pygame + Random + time + PySerial  
    **Inspiração:** Space Invaders  
    **Descrição:** *BlitzStar* é uma reconstrução do clássico *Space Invaders*, utilizando *Pygame* para a implementação gráfica e lógica do jogo e *Random* para a aleatoriedade de elementos como movimentação e spawn de inimigos.  
    **Objetivo:** Criar um modelo funcional semelhante ao jogo inspirado com recursos básicos como pontuação, controle da nave e disparo, visando implementações futuras baseadas nas necessidades de melhoria e expansões.
